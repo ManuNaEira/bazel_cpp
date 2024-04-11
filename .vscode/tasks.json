@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Bazel - Dependency Graph",
+            "type": "shell",
+            "command":  "bazel query --noimplicit_deps 'deps(//src/example:example_main)' --output graph | dot -Tpng > bazel-out/dep-graph.png && echo 'Dependency graph created at bazel-out/dep-graph.png'",
+            "problemMatcher": [],
+        }
+    ]
+}

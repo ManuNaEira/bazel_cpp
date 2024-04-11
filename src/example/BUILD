@@ -1,6 +1,6 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary")
 
 cc_binary(
-    name = "example1",
+    name = "example_main",
     srcs = ["main.cpp"],
 )

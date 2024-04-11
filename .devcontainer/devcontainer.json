@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "C++",
+	"name": "Bazel C++",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
@@ -10,7 +10,9 @@
 			"extensions": [
 				"BazelBuild.vscode-bazel",
 				"ms-vscode.cpptools",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				"mhutchie.git-graph",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
@@ -22,7 +24,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "gcc -v && cmake --version && bazel version"
+	"postCreateCommand": "gcc -v && cmake --version && dot -V && bazel version"
 
 	// Configure tool-specific properties.
 	// "customizations": {},

@@ -3,6 +3,8 @@ Repository to explore the bazel build system for C++ code.
 
 ## Installation - VSCode Dev Containers
 
+> ⚙ PRERREQUISITES: VSCode, Docker and Git setup.
+
 > ⚠ If following these steps you are encountering network issues and you are in
 > WSL with ZScaler VPN client connected, try to disconnect from the client as
 > described in this Confluence:
