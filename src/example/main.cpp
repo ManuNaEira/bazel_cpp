@@ -1,6 +1,10 @@
 #include <iostream>
 
+#include "lib1/lib1.hpp"
+#include "lib2/lib2.hpp"
+
 int main() {
-  std::cout << "Hello world!" << std::endl;
+  CLib1::PrintHello();
+  CLib2::PrintWorld();
   return 0;
 }
