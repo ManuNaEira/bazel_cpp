@@ -14,6 +14,21 @@
             "type": "shell",
             "command": "echo ${workspaceFolderBasename}",
             "problemMatcher": []
-        }
+        },
+        {
+            "label": "Bazel Build (Debug)",
+            "type": "shell",
+            "command": "bazel  build ${relativeFileDirname}:${fileBasenameNoExtension} -c dbg",
+            "windows": {
+              "command": "bazel build ${relativeFileDirname}:${fileBasenameNoExtension} --experimental_enable_runfiles -c dbg"
+            },
+            "osx": {
+              "command": "bazel build ${relativeFileDirname}:${fileBasenameNoExtension} -c dbg --spawn_strategy=local",
+            },
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            },
+        },
     ]
 }

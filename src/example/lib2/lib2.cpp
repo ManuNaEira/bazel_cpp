@@ -1,7 +1,5 @@
 #include "lib2.hpp"
 
-#include <iostream>
-
-void CLib2::PrintWorld() {
-  std::cout << "World" << std::endl;
+std::string CLib2::PrintWorld() {
+  return std::string("World");
 }
