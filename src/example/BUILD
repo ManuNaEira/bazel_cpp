@@ -1,5 +1,5 @@
 cc_binary(
-    name = "example_main",
+    name = "main",
     srcs = ["main.cpp"],
     deps = [
         "//src/example/lib1:lib1",

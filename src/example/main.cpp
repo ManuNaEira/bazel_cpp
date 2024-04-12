@@ -4,7 +4,7 @@
 #include "lib2/lib2.hpp"
 
 int main() {
-  CLib1::PrintHello();
-  CLib2::PrintWorld();
+  std::cout << CLib1::PrintHello() << " ";
+  std::cout << CLib2::PrintWorld() << std::endl;
   return 0;
 }
