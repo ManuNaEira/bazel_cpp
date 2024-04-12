@@ -44,17 +44,17 @@
         //     "MIMode": "lldb",
         //     "miDebuggerPath": "/usr/bin/lldb"
         // },
-        // {
-        //     "name": "CodeLLDB",
-        //     "preLaunchTask": "Bazel Build (Debug)",
-        //     "type": "lldb",
-        //     "request": "launch",
-        //     "program": "${workspaceFolder}/bazel-bin/${relativeFileDirname}/${fileBasenameNoExtension}",
-        //     "args": [],
-        //     "sourceMap": {
-        //       ".": "${workspaceFolder}"
-        //     },
-        // },
+        {
+            "name": "CodeLLDB",
+            "preLaunchTask": "Bazel Build (Debug)",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/bazel-bin/${relativeFileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "sourceMap": {
+              ".": "${workspaceFolder}"
+            },
+        },
         {
             "name": "Linux: g++ build and debug active file",
             "preLaunchTask": "Bazel Build (Debug)",

@@ -13,7 +13,8 @@
 				"ms-vscode.cmake-tools",
 				"mhutchie.git-graph",
 				"streetsidesoftware.code-spell-checker",
-				"matepek.vscode-catch2-test-adapter"
+				"matepek.vscode-catch2-test-adapter",
+				"vadimcn.vscode-lldb"
 			]
 		}
 	},
