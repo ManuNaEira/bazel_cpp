@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "bazel-${workspaceFolderBasename}/external/com_google_googletest/googletest/include"
+            ]
+        }
+    ],
+    "version": 4
+}

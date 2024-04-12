@@ -4,7 +4,7 @@
 
 class CLib1 {
  public:
-  static void PrintHello();
+  static std::string PrintHello();
 };
 
 #endif /* EXAMPLES_EXAMPLE3_LIB1_LIB1 */

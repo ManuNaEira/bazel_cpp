@@ -6,8 +6,14 @@
         {
             "label": "Bazel - Dependency Graph",
             "type": "shell",
-            "command":  "bazel query --noimplicit_deps 'deps(//src/example:example_main)' --output graph | dot -Tpng > bazel-out/dep-graph.png && echo 'Dependency graph created at bazel-out/dep-graph.png'",
-            "problemMatcher": [],
+            "command": "bazel query --noimplicit_deps 'deps(//src/example:example_main)' --output graph | dot -Tpng > bazel-out/dep-graph.png && echo 'Dependency graph created at bazel-out/dep-graph.png'",
+            "problemMatcher": []
+        },
+        {
+            "label": "Know VSCode variable value",
+            "type": "shell",
+            "command": "echo ${workspaceFolderBasename}",
+            "problemMatcher": []
         }
     ]
 }
