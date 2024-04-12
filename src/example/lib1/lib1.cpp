@@ -2,4 +2,6 @@
 
 #include <iostream>
 
-void CLib1::PrintHello() { std::cout << "Hello" << std::endl; }
+std::string CLib1::PrintHello() {
+    return std::string("Hello");
+}
