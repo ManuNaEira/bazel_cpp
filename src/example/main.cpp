@@ -5,6 +5,6 @@
 
 int main() {
   std::cout << CLib1::PrintHello() << " ";
-  std::cout << CLib2::PrintWorld() << std::endl;
+  std::cout << CLib2::PrintWorld() << "!" << std::endl;
   return 0;
 }
