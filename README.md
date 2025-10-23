@@ -33,7 +33,7 @@ Repository to explore the bazel build system for C++ code.
   Hello World!
   ```
 - Run the tests:
-  - with the command `bazel test tests:test_lib1 --noenable_bzlmod --enable_workspace`.
+  - with the command `bazel test tests:test_lib1`.
   - Through the **VSCode Testing** pane. Debugging also supported!
 - To generate the target `//src/example:main` dependency graph run the VSCode
   task "Bazel - Dependency Graph"
