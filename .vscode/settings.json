@@ -1,3 +1,5 @@
 {
-    "testMate.cpp.test.executables": "{build,Build,BUILD,out,Out,OUT,bazel-bin}/**/*{test,Test,TEST}*"
+    // "testMate.cpp.test.executables": "{build,Build,BUILD,out,Out,OUT}/**/*{test,Test,TEST}*" // Default TestMate path to look for tests, but it doesn't work for bazel
+    "testMate.cpp.test.executables": "bazel-bin/tests/*"
+    // "testMate.cpp.test.executables": "bazel-bin/tests/test_lib1.runfiles/__main__/tests/*" // Other place where tests are located
 }

@@ -1,6 +1,12 @@
 # bazel_cpp
 Repository to explore the bazel build system for C++ code.
 
+## Features
+- 🧩 Modular implementation: shows how to organise code into different libraries.
+- 🧪 Tests with GTest: running and debugging from VSCode (thanks to [C++
+  TestMate](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter)).
+- 🌳 Dependency graph generation.
+
 ## Installation - VSCode Dev Containers
 
 > ⚙ PREREQUISITES: VSCode, Docker and Git.
@@ -10,6 +16,9 @@ Repository to explore the bazel build system for C++ code.
     **Dev Containers: Open Folder in Container...**
   - Second option: open VSCode and run the command **Dev Containers: Clone
     Repository in Container Volume...**
+
+## Usage
+
 - In a terminal, run `bazel run src/example:main` command, you should get an
   output like the following:
   ```bash
@@ -23,6 +32,10 @@ Repository to explore the bazel build system for C++ code.
   INFO: Running command line: bazel-bin/src/example/main
   Hello World!
   ```
+- Run the tests:
+  - with the command `bazel test tests:test_lib1 --noenable_bzlmod --enable_workspace`.
+  - Through the **VSCode Testing** pane. Debugging also supported!
+- To generate the target `//src/example:main` dependency graph run the VSCode
+  task "Bazel - Dependency Graph"
 
-## Features
-- 🧩 Modular implementation: shows how to organise code into different libraries.
+
