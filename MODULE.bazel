@@ -1,3 +1,4 @@
+"""Defines module configuration and external dependencies for the bazel_cpp project."""
 module(name = "main", version="")
 
 # -- bazel_dep definitions -- #
