@@ -4,3 +4,7 @@ module(name = "main", version="")
 # -- bazel_dep definitions -- #
 bazel_dep(name = "platforms", version = "1.0.0")
 bazel_dep(name = "googletest", version = "1.17.0.bcr.1")
+# This "rules_python" module should be taken automatically, as it is a transitive dependency of
+# `pybind11_bazel`, but it is not. So, it needs to be declared explicitly here.
+bazel_dep(name = "rules_python", version = "1.6.3")
+bazel_dep(name = "pybind11_bazel", version = "3.0.0")

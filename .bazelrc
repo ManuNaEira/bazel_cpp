@@ -1,2 +1,5 @@
 # Use C++17 for all builds, as that's the minimum standard required by GTest >= 1.17.0
 build --cxxopt='-std=c++17'
+
+# Recommend in https://rules-python.readthedocs.io/en/latest/howto/build-a-wheel.html#disabling-init-py-generation
+build --incompatible_default_to_explicit_init_py=true

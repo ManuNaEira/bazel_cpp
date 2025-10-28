@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "bazel-${workspaceFolderBasename}/external/googletest~/googletest/include"
+                "bazel-${workspaceFolderBasename}/external/googletest+/googletest/include/"
             ]
         }
     ],

@@ -2,10 +2,12 @@
 Repository to explore the bazel build system for C++ code.
 
 ## Features
-- 🧩 Modular implementation: shows how to organise code into different libraries.
-- 🧪 Tests with GTest: running and debugging from VSCode (thanks to [C++
+- **🧩 Modular implementation**: shows how to organise code into different libraries.
+- **🧪 Tests with GTest**: running and debugging from VSCode (thanks to [C++
   TestMate](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter)).
-- 🌳 Dependency graph generation.
+- **🌳 Dependency graph generation**.
+- **🐍 Python bindings setup**: shows how to create a python extension so that functionality
+  implemented in C++ can be accessed in python.
 
 ## Installation - VSCode Dev Containers
 
@@ -37,5 +39,11 @@ Repository to explore the bazel build system for C++ code.
   - Through the **VSCode Testing** pane. Debugging also supported!
 - To generate the target `//src/example:main` dependency graph run the VSCode
   task "Bazel - Dependency Graph"
+- Python bindings can be built using the [`pybind11_bazel`
+  module](https://github.com/pybind/pybind11_bazel):
+  - See the example binding file for `lib1` in `src/example/lib1/lib1_py.cpp`.
+  - The python wheel file can be build with `bazel build //src/example/lib1:lib1_py_wheel`.
+  - How to access the python functionality can be seen in `tests/test_lib1.py`, which can be run
+    with `bazel test //tests:test_lib1_py`
 
 
