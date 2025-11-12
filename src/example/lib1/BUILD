@@ -11,35 +11,34 @@ cc_library(
 )
 
 pybind_extension(
-    name = "lib1_py",
+    name = "lib1py",
     srcs = ["lib1_py.cpp"],
     deps = [":lib1"],
 )
 
 py_library(
-    name = "lib1_py_lib",
-    data = [":lib1_py"],
+    name = "lib1py_lib",
+    data = [":lib1py"],
     imports = ["."],
     visibility = ["//tests:__pkg__"],
 )
 
 py_library(
-    name = "lib1_py_stubs",
+    name = "lib1py_stubs",
     data = ["lib1_py.pyi"],
 )
 
 # This wraps the extension in a Python package layout
 py_package(
-    name = "lib1_py_pkg",
-    deps = [":lib1_py", ":lib1_py_lib", ":lib1_py_stubs"],
+    name = "lib1py_pkg",
+    deps = [":lib1py", ":lib1py_lib", ":lib1py_stubs"],
 )
 
 py_wheel(
-  name = "lib1_py_wheel",
-  testonly = True,
-  distribution = "lib1_py",
+  name = "lib1py_wheel",
+  distribution = "lib1py",
   version = "1.0.0",
-  deps = [":lib1_py_pkg"],
+  deps = [":lib1py_pkg"],
   # Add package mapping to flatten structure
   strip_path_prefixes = ["src/example/lib1"],
 )

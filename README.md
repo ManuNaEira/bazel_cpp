@@ -42,8 +42,8 @@ Repository to explore the bazel build system for C++ code.
 - Python bindings can be built using the [`pybind11_bazel`
   module](https://github.com/pybind/pybind11_bazel):
   - See the example binding file for `lib1` in `src/example/lib1/lib1_py.cpp`.
-  - The python wheel file can be build with `bazel build //src/example/lib1:lib1_py_wheel`.
+  - The python wheel file can be build with `bazel build //src/example/lib1:lib1py_wheel`.
   - How to access the python functionality can be seen in `tests/test_lib1.py`, which can be run
-    with `bazel test //tests:test_lib1_py`
+    with `bazel test //tests:test_lib1py`
 
 

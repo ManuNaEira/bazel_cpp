@@ -10,9 +10,9 @@ cc_test(
 )
 
 py_test(
-    name = "test_lib1_py",
+    name = "test_lib1py",
     size="small",
     srcs = ["test_lib1.py"],
     main = "test_lib1.py",
-    deps = ["//src/example/lib1:lib1_py_lib"],
+    deps = ["//src/example/lib1:lib1py_lib"],
 )
